@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
+            Console.WriteLine("Welcome in C# With Github");
+            Console.ReadLine();
         }
     }
 }
