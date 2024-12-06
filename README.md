@@ -1,8 +1,10 @@
 # DEPI_2024_ALX2_SWD5_G1
 ## This repository To Digital Egypt Pioneers leadership ALX2_SWD5_G1.
-### Day 5  in C# 
+### Day 6  in C# 
 ------------------
 1- **Object-Oriented programming (OOP) In C#**.
+
+Push & Pull & Clone Github Repos                 Done
 
 2-Object Class
 ---------------
@@ -44,16 +46,7 @@ Types Of Class
               Encapsulation -->  Property  Auto
               
 6-Abstraction
-------------------
+------------------                                                    
 
-
-Push & Pull & Clone Github Repos                 Done
-
-
-
-  
-                                                                                     
-
-
-### Day 5  in C# 
+### Day 7  in C# 
 ------------------
