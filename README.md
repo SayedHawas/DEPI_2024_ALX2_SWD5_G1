@@ -17,37 +17,43 @@ Class Members
             Method OverLoad                      Done
             Constructor OverLoad                 Done  
             Readonly Vs Const                    Done
-            Inheritance   OverView               Done
+            Inheritance                          Done
+
+Types Of Class 
+***************
+             Normal Class                                      Done 
+             Sealed Class                                      Done 
+             static Class                                      Done  
+             Partial Class                                     Done
+
+             Static Memebr                                    Done          
+             Recursion Method                                 Done 
+             Extension Method                                 Done    
 
 3-Inheritance
 ---------------
-
+            Inheritance                                      Done 
+            
 4-Polymorphism 
-
+---------------
+           Ploymarphism (OverLoad , Override +Inheritance ) Done
+           
 5-Encapsulation
 -----------------
-
+              Encapsulation -->  Property  Full 
+              Encapsulation -->  Property  Auto
+              
 6-Abstraction
 ------------------
 
 
 Push & Pull & Clone Github Repos                 Done
-Inheritance                                      Done 
-Ploymarphism (OverLoad , Override +Inheritance ) Done
 
-Static Memebr                                    Done          
-Recursion Method                                 Done 
-Extension Method                                 Done      
+
+
+  
                                                                                      
-Types Of Class 
-***************
-Normal Class                                      Done 
 
-Sealed Class                                      Done 
-
-static Class                                      Done  
-
-Partial Class                                     Done
 
 ### Day 5  in C# 
 ------------------
