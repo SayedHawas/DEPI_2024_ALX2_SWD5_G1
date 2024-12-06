@@ -5,19 +5,10 @@
 1- **Object-Oriented programming (OOP) In C#**.
 
 2-Object Class
-
-3-Inheritance
-
-4-Polymorphism 
-
-5-Encapsulation
-
-6-Abstraction
-------------------
+---------------
 Class Members 
-        ###Fields                       Done 
-         
-         ###Methods                     Done
+            Fields                       Done 
+            Methods                     Done
          
          ###Property Full               Done
          
@@ -25,11 +16,22 @@ Class Members
          
          ###Create Object From Class    Done 
          
-Consturctor    ---                   Done 
+         Consturctor    ---                   Done 
      Method OverLoad                 Done
      Constructor OverLoad            Done  
 Readonly Vs Const                    Done
 Inheritance   OverView               Done
+
+3-Inheritance
+
+4-Polymorphism 
+
+5-Encapsulation
+-----------------
+
+6-Abstraction
+------------------
+
 
 Push & Pull & Clone Github Repos                 Done
 Inheritance                                      Done 
