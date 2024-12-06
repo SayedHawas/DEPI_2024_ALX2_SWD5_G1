@@ -13,13 +13,18 @@
 5-Encapsulation
 
 6-Abstraction
-
+------------------
 Class Members 
-         Fields                      Done 
-         Methods                     Done
-         Property Full               Done
-         Property Auto               Done 
-         Create Object From Class    Done 
+        ###Fields                       Done 
+         
+         ###Methods                     Done
+         
+         ###Property Full               Done
+         
+         ###Property Auto               Done 
+         
+         ###Create Object From Class    Done 
+         
 Consturctor    ---                   Done 
      Method OverLoad                 Done
      Constructor OverLoad            Done  
@@ -37,7 +42,12 @@ Extension Method                                 Done
 Types Of Class 
 ***************
 Normal Class                                      Done 
+
 Sealed Class                                      Done 
+
 static Class                                      Done  
+
 Partial Class                                     Done
 
+### Day 5  in C# 
+------------------
