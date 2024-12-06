@@ -8,15 +8,11 @@
 ---------------
 Class Members 
 
-             Fields                              Done 
-             Methods                             Done
-         
-             Property Full                       Done
-         
-             Property Auto                       Done 
-         
+           Fields                                Done 
+            Methods                              Done        
+            Property Full                        Done
+            Property Auto                        Done        
             Create Object From Class             Done 
-         
             Consturctor                          Done 
             Method OverLoad                      Done
             Constructor OverLoad                 Done  
