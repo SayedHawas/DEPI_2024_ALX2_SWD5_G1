@@ -70,11 +70,12 @@ Generic Property                            -- Done
 
 Generic Parameter                           -- Done 
 
-Access Modifiers                            -- Done
+Encapsulation -->  Property  & DLL (Access Modifier)  Class Library {private - Public ...}   --Done 
+
+Access Modifiers                            (public ,private ,protected,internal,protected internal, private protected ,file)
 -----------------
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
 
-(public ,private ,protected,internal,protected internal, private protected ,file)
 
 public: Code in any assembly can access this type or member. The accessibility level of the containing type controls the accessibility level of public members of the type.
 
@@ -85,8 +86,9 @@ protected: Only code in the same class or in a derived class can access this typ
 internal: Only code in the same assembly can access this type or member.
 
 protected internal: Only code in the same assembly or in a derived class in another assembly can access this type or member.
+
 private protected: Only code in the same assembly and in the same class or a derived class can access the type or member.
+
 file: Only code in the same file can access the type or member.
 
 Encapsulation (DLL)                                                                          --Done 
-Encapsulation -->  Property  & DLL (Access Modifier)  Class Library {private - Public ...}   --Done 
