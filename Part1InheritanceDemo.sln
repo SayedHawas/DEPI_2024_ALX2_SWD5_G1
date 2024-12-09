@@ -5,11 +5,17 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Part1InheritanceDemo", "Part1InheritanceDemo\Part1InheritanceDemo.csproj", "{333C4234-B088-405D-A8D8-CFCB7E299772}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part2ClassOfTypesDmeo", "Part2ClassOfTypesDmeo\Part2ClassOfTypesDmeo.csproj", "{FA568E85-F65E-4846-BB8F-3D60537ED1C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Part2ClassOfTypesDmeo", "Part2ClassOfTypesDmeo\Part2ClassOfTypesDmeo.csproj", "{FA568E85-F65E-4846-BB8F-3D60537ED1C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoClassStaticDemo", "DemoClassStaticDemo\DemoClassStaticDemo.csproj", "{2ABFF6FF-3A5C-40CF-8C7B-F53669ADE2D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoClassStaticDemo", "DemoClassStaticDemo\DemoClassStaticDemo.csproj", "{2ABFF6FF-3A5C-40CF-8C7B-F53669ADE2D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part3PartialDemo", "Part3PartialDemo\Part3PartialDemo.csproj", "{A64C621F-9034-457A-B6A6-0583CE957D27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Part3PartialDemo", "Part3PartialDemo\Part3PartialDemo.csproj", "{A64C621F-9034-457A-B6A6-0583CE957D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart1AbstarctClass", "Day7CSharpPart1AbstarctClass\Day7CSharpPart1AbstarctClass.csproj", "{6C89D7CB-1971-48AC-ADBC-932ADAD5279F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart2Interface", "Day7CSharpPart2Interface\Day7CSharpPart2Interface.csproj", "{4B2065B1-B717-4FA3-A28D-B25060A4BC15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart3InnerClass", "Day7CSharpPart3InnerClass\Day7CSharpPart3InnerClass.csproj", "{284D389C-3763-49AE-A55F-17F555559B60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{A64C621F-9034-457A-B6A6-0583CE957D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64C621F-9034-457A-B6A6-0583CE957D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64C621F-9034-457A-B6A6-0583CE957D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C89D7CB-1971-48AC-ADBC-932ADAD5279F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C89D7CB-1971-48AC-ADBC-932ADAD5279F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C89D7CB-1971-48AC-ADBC-932ADAD5279F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C89D7CB-1971-48AC-ADBC-932ADAD5279F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B2065B1-B717-4FA3-A28D-B25060A4BC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2065B1-B717-4FA3-A28D-B25060A4BC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2065B1-B717-4FA3-A28D-B25060A4BC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2065B1-B717-4FA3-A28D-B25060A4BC15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284D389C-3763-49AE-A55F-17F555559B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284D389C-3763-49AE-A55F-17F555559B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284D389C-3763-49AE-A55F-17F555559B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284D389C-3763-49AE-A55F-17F555559B60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
