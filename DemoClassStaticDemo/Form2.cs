@@ -11,5 +11,10 @@
         {
             HelperStatic.CleanForm(this);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("", "", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+        }
     }
 }

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Day7CSharpPart6DLL\Day7CSharpPart6DLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Day7CSharpPart6DLL">
+      <HintPath>..\Day7CSharpPart6DLL\bin\Debug\net8.0\Day7CSharpPart6DLL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
