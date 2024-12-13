@@ -103,10 +103,15 @@ LINQ stands for Language Integrated Query
 LINQ Qeury Providers (LINQ Models):-                                  
 --------------------------------------------------------------------------------------------------------
 1)LINQ To XML         For XML Document
+
 2)LINQ to SQL         For SQL DataBase (Only SQL)
+
 3)LINQ To Objects     For Object Data in Memory 
+
 4)LINQ To Entities    For Entities
-5)LINQ To DataSets    For DataSets   (Data source in Memory Not collection but DataSource)
+
+5)LINQ To DataSets    For DataSets  
+
 
 
 LINQ Principles:-
