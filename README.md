@@ -143,3 +143,29 @@ LINQ Principles:-
 13)Bulid-in Delegate.
 
 *****************************
+----------------------------
+HTML 5
+------------------
+
+Lesson 1: Creating an HTML5 Page
+--------------------------------------------------
+1)What's New in HTML5?
+
+2)Document Structure in HTML5
+
+3)Text and Images in HTML5
+
+4)Demonstration: Using HTML5 Features in a Simple Contact Form
+
+
+Lesson 2: Styling an HTML5 Page
+------------------------------------------------
+1)Understanding CSS Text Styles
+
+2)The CSS Box Model
+
+3)Styling Backgrounds in CSS
+
+4)Demonstration: Adding CSS Styles to an HTML Page
+
+5)Demonstration: Creating and Styling an HTML5 Page
