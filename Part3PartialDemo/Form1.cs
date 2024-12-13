@@ -11,7 +11,14 @@ namespace Part3PartialDemo
         {
 
         }
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome ");
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
