@@ -92,3 +92,54 @@ private protected: Only code in the same assembly and in the same class or a der
 file: Only code in the same file can access the type or member.
 
 Encapsulation (DLL)                                                                          --Done 
+
+### Day 8 in C#  & HTML 5
+----------------------------
+What is LINQ ?
+------------------
+
+LINQ stands for Language Integrated Query 
+
+LINQ Qeury Providers (LINQ Models):-                                  
+--------------------------------------------------------------------------------------------------------
+1)LINQ To XML         For XML Document
+
+2)LINQ to SQL         For SQL DataBase (Only SQL)
+
+3)LINQ To Objects     For Object Data in Memory 
+
+4)LINQ To Entities    For Entities
+
+5)LINQ To DataSets    For DataSets  
+
+
+
+LINQ Principles:-
+------------------
+1)Implicit type (Var)
+
+2)Object Initializer.
+
+3)Collection Initializer.
+
+4)Dynamic Name.
+
+5)Anonymous Types.
+
+6)Generic type.
+
+7)Extension Methods.
+
+8)Delegate. 
+
+9)Linq To Object (Linq Query).
+
+10)Anonymous Delegate.
+
+11)Anonymous Method. 
+
+12)Linq Lambda Expression. 
+
+13)Bulid-in Delegate.
+
+*****************************
