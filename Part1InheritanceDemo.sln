@@ -11,21 +11,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoClassStaticDemo", "Demo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Part3PartialDemo", "Part3PartialDemo\Part3PartialDemo.csproj", "{A64C621F-9034-457A-B6A6-0583CE957D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart1AbstarctClass", "Day7CSharpPart1AbstarctClass\Day7CSharpPart1AbstarctClass.csproj", "{6C89D7CB-1971-48AC-ADBC-932ADAD5279F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CSharpPart1AbstarctClass", "Day7CSharpPart1AbstarctClass\Day7CSharpPart1AbstarctClass.csproj", "{6C89D7CB-1971-48AC-ADBC-932ADAD5279F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart2Interface", "Day7CSharpPart2Interface\Day7CSharpPart2Interface.csproj", "{4B2065B1-B717-4FA3-A28D-B25060A4BC15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CSharpPart2Interface", "Day7CSharpPart2Interface\Day7CSharpPart2Interface.csproj", "{4B2065B1-B717-4FA3-A28D-B25060A4BC15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart3InnerClass", "Day7CSharpPart3InnerClass\Day7CSharpPart3InnerClass.csproj", "{284D389C-3763-49AE-A55F-17F555559B60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CSharpPart3InnerClass", "Day7CSharpPart3InnerClass\Day7CSharpPart3InnerClass.csproj", "{284D389C-3763-49AE-A55F-17F555559B60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart4EnumStruct", "Day7CSharpPart4EnumStruct\Day7CSharpPart4EnumStruct.csproj", "{9001EB06-C5D1-42C6-897F-EAE9EFFC3E04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CSharpPart4EnumStruct", "Day7CSharpPart4EnumStruct\Day7CSharpPart4EnumStruct.csproj", "{9001EB06-C5D1-42C6-897F-EAE9EFFC3E04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CsharpPart5Enum", "Day7CsharpPart5Enum\Day7CsharpPart5Enum.csproj", "{474D349B-81AF-491E-9C63-185C976F52DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CsharpPart5Enum", "Day7CsharpPart5Enum\Day7CsharpPart5Enum.csproj", "{474D349B-81AF-491E-9C63-185C976F52DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart6DLL", "Day7CSharpPart6DLL\Day7CSharpPart6DLL.csproj", "{8FCD1417-D0B8-4940-8F3A-7478C8DB2488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CSharpPart6DLL", "Day7CSharpPart6DLL\Day7CSharpPart6DLL.csproj", "{8FCD1417-D0B8-4940-8F3A-7478C8DB2488}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7CSharpPart7ConsumingDLL", "Day7CSharpPart7ConsumingDLL\Day7CSharpPart7ConsumingDLL.csproj", "{EACA1038-8BB1-4118-8413-10F3B08AB207}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CSharpPart7ConsumingDLL", "Day7CSharpPart7ConsumingDLL\Day7CSharpPart7ConsumingDLL.csproj", "{EACA1038-8BB1-4118-8413-10F3B08AB207}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7ScharpPart8GenericType", "Day7ScharpPart8GenericType\Day7ScharpPart8GenericType.csproj", "{BFB35733-3C40-4BBD-984C-28D3CFCA440E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7ScharpPart8GenericType", "Day7ScharpPart8GenericType\Day7ScharpPart8GenericType.csproj", "{BFB35733-3C40-4BBD-984C-28D3CFCA440E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{81B83F3A-3106-4A40-95C9-FFB58F5CBFCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8CsharpPart1LINQ", "Day8CsharpPart1LINQ\Day8CsharpPart1LINQ.csproj", "{14760DE7-3478-4D52-A061-1989B8D1A61B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8CSharpPart2Delegate", "Day8CSharpPart2Delegate\Day8CSharpPart2Delegate.csproj", "{803D3129-D90E-447A-9D96-789A36B52A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8ScharpPart2DelegateInBS", "Day8ScharpPart2DelegateInBS\Day8ScharpPart2DelegateInBS.csproj", "{518D49D5-E6C0-4DD5-B721-17CF857E9BB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8CSharpPart3Fun_Action_pred", "Day8CSharpPart3Fun_Action_pred\Day8CSharpPart3Fun_Action_pred.csproj", "{A85976A9-C3F1-477A-9E54-225E28D051AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +91,26 @@ Global
 		{BFB35733-3C40-4BBD-984C-28D3CFCA440E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB35733-3C40-4BBD-984C-28D3CFCA440E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB35733-3C40-4BBD-984C-28D3CFCA440E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B83F3A-3106-4A40-95C9-FFB58F5CBFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B83F3A-3106-4A40-95C9-FFB58F5CBFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B83F3A-3106-4A40-95C9-FFB58F5CBFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B83F3A-3106-4A40-95C9-FFB58F5CBFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14760DE7-3478-4D52-A061-1989B8D1A61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14760DE7-3478-4D52-A061-1989B8D1A61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14760DE7-3478-4D52-A061-1989B8D1A61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14760DE7-3478-4D52-A061-1989B8D1A61B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803D3129-D90E-447A-9D96-789A36B52A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803D3129-D90E-447A-9D96-789A36B52A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803D3129-D90E-447A-9D96-789A36B52A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803D3129-D90E-447A-9D96-789A36B52A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518D49D5-E6C0-4DD5-B721-17CF857E9BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518D49D5-E6C0-4DD5-B721-17CF857E9BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518D49D5-E6C0-4DD5-B721-17CF857E9BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518D49D5-E6C0-4DD5-B721-17CF857E9BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85976A9-C3F1-477A-9E54-225E28D051AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85976A9-C3F1-477A-9E54-225E28D051AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85976A9-C3F1-477A-9E54-225E28D051AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85976A9-C3F1-477A-9E54-225E28D051AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
