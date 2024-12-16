@@ -218,4 +218,7 @@ Stream , FileStream ,StreamReader ,StreamWrite ,BinaryReader
 *********************************
 Binary Reader , Binary Writer
 *********************************
+********************************************************
+DriveInfo, Directory , DirectoryInfo ,File ,FileInfo
+********************************************************
 
