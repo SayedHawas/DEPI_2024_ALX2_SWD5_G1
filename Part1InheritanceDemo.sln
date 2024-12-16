@@ -27,15 +27,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7CSharpPart7ConsumingDLL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7ScharpPart8GenericType", "Day7ScharpPart8GenericType\Day7ScharpPart8GenericType.csproj", "{BFB35733-3C40-4BBD-984C-28D3CFCA440E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{81B83F3A-3106-4A40-95C9-FFB58F5CBFCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{81B83F3A-3106-4A40-95C9-FFB58F5CBFCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8CsharpPart1LINQ", "Day8CsharpPart1LINQ\Day8CsharpPart1LINQ.csproj", "{14760DE7-3478-4D52-A061-1989B8D1A61B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day8CsharpPart1LINQ", "Day8CsharpPart1LINQ\Day8CsharpPart1LINQ.csproj", "{14760DE7-3478-4D52-A061-1989B8D1A61B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8CSharpPart2Delegate", "Day8CSharpPart2Delegate\Day8CSharpPart2Delegate.csproj", "{803D3129-D90E-447A-9D96-789A36B52A64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day8CSharpPart2Delegate", "Day8CSharpPart2Delegate\Day8CSharpPart2Delegate.csproj", "{803D3129-D90E-447A-9D96-789A36B52A64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8ScharpPart2DelegateInBS", "Day8ScharpPart2DelegateInBS\Day8ScharpPart2DelegateInBS.csproj", "{518D49D5-E6C0-4DD5-B721-17CF857E9BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day8ScharpPart2DelegateInBS", "Day8ScharpPart2DelegateInBS\Day8ScharpPart2DelegateInBS.csproj", "{518D49D5-E6C0-4DD5-B721-17CF857E9BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8CSharpPart3Fun_Action_pred", "Day8CSharpPart3Fun_Action_pred\Day8CSharpPart3Fun_Action_pred.csproj", "{A85976A9-C3F1-477A-9E54-225E28D051AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day8CSharpPart3Fun_Action_pred", "Day8CSharpPart3Fun_Action_pred\Day8CSharpPart3Fun_Action_pred.csproj", "{A85976A9-C3F1-477A-9E54-225E28D051AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day9CSharpDataAccessADOPart1", "Day9CSharpDataAccessADOPart1\Day9CSharpDataAccessADOPart1.csproj", "{5649A3B9-744A-42CE-AEFE-055108763048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day9CSharpEFCoreCodeFirstPart2", "Day9CSharpEFCoreCodeFirstPart2\Day9CSharpEFCoreCodeFirstPart2.csproj", "{96454522-3F21-4095-9223-FE172DC7DC3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,14 @@ Global
 		{A85976A9-C3F1-477A-9E54-225E28D051AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A85976A9-C3F1-477A-9E54-225E28D051AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A85976A9-C3F1-477A-9E54-225E28D051AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5649A3B9-744A-42CE-AEFE-055108763048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5649A3B9-744A-42CE-AEFE-055108763048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5649A3B9-744A-42CE-AEFE-055108763048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5649A3B9-744A-42CE-AEFE-055108763048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96454522-3F21-4095-9223-FE172DC7DC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96454522-3F21-4095-9223-FE172DC7DC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96454522-3F21-4095-9223-FE172DC7DC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96454522-3F21-4095-9223-FE172DC7DC3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
