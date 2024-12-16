@@ -177,5 +177,45 @@ Lesson 2: Styling an HTML5 Page
    	Entity Framework (OverView)         Done 
     
    	Entity Framework Core - Code First  Done   
-    
-           IO                                  Seft
+
+ Main Components
+**********************
+
+1) DbContext:
+-----------
+
+                Represents the database session and provides a way to query and interact with the database.
+                
+2)DbSet:
+-------
+
+                             Represents a collection of entities in the database.
+                             
+3)Entity Classes:
+---------------
+
+                                    POCO classes that map to database tables. (POCO. Plain Old CLR Object.)
+                                    
+4)Configuration:
+----------------
+
+                   Fluent API or Data Annotations to configure entity properties and relationships.
+                   
+5)Migrations:
+------------
+
+                                  Used for creating and applying database schema changes.
+                                  
+LINQ (Language Integrated Query):
+-----------------------------------
+
+                                        Used for querying data in a type-safe manner.
+  IO Self Stude                                         
+----------------                              
+*************************************************************
+Stream , FileStream ,StreamReader ,StreamWrite ,BinaryReader 
+**************************************************************
+*********************************
+Binary Reader , Binary Writer
+*********************************
+
