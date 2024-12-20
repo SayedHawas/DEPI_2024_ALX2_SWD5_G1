@@ -37,9 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day8ScharpPart2DelegateInBS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day8CSharpPart3Fun_Action_pred", "Day8CSharpPart3Fun_Action_pred\Day8CSharpPart3Fun_Action_pred.csproj", "{A85976A9-C3F1-477A-9E54-225E28D051AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day9CSharpDataAccessADOPart1", "Day9CSharpDataAccessADOPart1\Day9CSharpDataAccessADOPart1.csproj", "{5649A3B9-744A-42CE-AEFE-055108763048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day9CSharpDataAccessADOPart1", "Day9CSharpDataAccessADOPart1\Day9CSharpDataAccessADOPart1.csproj", "{5649A3B9-744A-42CE-AEFE-055108763048}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day9CSharpEFCoreCodeFirstPart2", "Day9CSharpEFCoreCodeFirstPart2\Day9CSharpEFCoreCodeFirstPart2.csproj", "{96454522-3F21-4095-9223-FE172DC7DC3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day9CSharpEFCoreCodeFirstPart2", "Day9CSharpEFCoreCodeFirstPart2\Day9CSharpEFCoreCodeFirstPart2.csproj", "{96454522-3F21-4095-9223-FE172DC7DC3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day10HTML5Part1", "Day10HTML5Part1\Day10HTML5Part1.csproj", "{77393D0F-213A-446B-BDEF-2DE3F83538A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{96454522-3F21-4095-9223-FE172DC7DC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96454522-3F21-4095-9223-FE172DC7DC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96454522-3F21-4095-9223-FE172DC7DC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77393D0F-213A-446B-BDEF-2DE3F83538A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77393D0F-213A-446B-BDEF-2DE3F83538A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77393D0F-213A-446B-BDEF-2DE3F83538A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77393D0F-213A-446B-BDEF-2DE3F83538A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
