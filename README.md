@@ -222,3 +222,78 @@ Binary Reader , Binary Writer
 DriveInfo, Directory , DirectoryInfo ,File ,FileInfo
 ********************************************************
 
+1.Web Development Introduction 
+---------------- 
+********************************************************
+2.HTML Introduction
+---------------------
+
+	•History of HTML                                                      Done 
+ 
+	•What you need to do to get going and make your first HTML page       Done 
+ 
+	•What are HTML Tags and Attributes?                                   Done 
+ 
+	•HTML Tag vs. Element (OverView DOM )                                 Done 
+ 
+	•HTML Attributes:
+ 
+		•How to differentiate HTML Document Versions HTML5         Done
+  
+	•HTML Comments.      <!--  Comments -->                               Done 
+ 
+3.HTML Basic Tags
+-------------------
+
+	•In this module, HTML is used to specify whether your web content should be recognized as
+ 
+                        a paragraph,             <p> </p>                     Done 
+                        
+                        list,                  OL , UL , DL                   Done
+                        
+                        heading,              <h1>,<h6>                       Done 
+                        
+                        Block                 Inline <span>   Page <Div>      Done
+                        
+                        link,                                                 Done
+                        
+                        image,                                                Done 
+                        
+                        multimedia player,                                    Done 
+                        
+                       form, or one of many other available elements or even a new element that you define.
+                       
+		i.HTML Basic Tags             Head , Body        Done 
+  
+		ii.HTML Formatting Tags                    
+  
+		iii.HTML Color Coding      Style="color:red"
+  
+4.HTML Grouping Using Div. Span                                  Done  
+
+5.HTML Lists
+
+	•Unordered Lists                   Done 
+ 
+	•Ordered Lists                     Done 
+ 
+	•Definition list	             Done 	
+ 
+6.HTML Images                                 Done 
+
+7.HTML Hyperlink                              Done 
+
+8.HTML Table                                  Done 
+
+9.HTML Form                                   Done 
+
+	•<input> and all types                Self
+ 
+	•<textarea>                           Self   
+ 
+	•<button>                             Self
+ 
+	•<select>                             Self
+ 
+	•<label>                              Self
+
