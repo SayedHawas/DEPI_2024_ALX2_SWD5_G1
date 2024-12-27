@@ -1,0 +1,20 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+
+    background-color: rgb(15, 155, 230);
+}
+
+#mydiv{
+    font-style: italic;
+}
+
+.myclass
+{
+border: 3px solid red;
+border-width: 4px;
+border-style: dashed;
+border-color: brown;
+
+}
