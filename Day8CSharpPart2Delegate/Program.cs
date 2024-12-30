@@ -40,6 +40,8 @@
             CheckNumber(num => num > 5, numbers);
             Console.WriteLine("---------------------");
             Console.WriteLine("Even numbers");
+
+            //This Method Linner To Delegate 
             CheckNumber(x => x % 2 == 0, numbers);
             Console.WriteLine("Odd numbers");
             CheckNumber(x => x % 2 == 1, numbers);
@@ -60,6 +62,13 @@
 
 
             Console.ReadLine();
+        }
+
+
+        //
+        public static bool checkMethod(int x)
+        {
+            return x % 2 == 0;
         }
 
 
