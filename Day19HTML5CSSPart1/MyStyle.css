@@ -1,0 +1,52 @@
+/*
+  Element Selector  P , Div , h1
+  Class    class"" Collection For Elements  . 
+  ID  Unqi Style     #
+*/
+body {
+ background-color: rgb(238, 232, 223);
+ /*color: #a42c2c;
+ color:rgba(250, 0, 0, 0.604)*/
+}
+div p{
+    color:blue;
+    font-size: 20px;
+   }
+
+  div{
+    color:orange;
+    font-size: 20px;
+  } 
+
+  ul{
+
+    color:blue;
+    font-size: 20px;
+  }
+
+  li{
+    color:green;
+    font-size: 20px;
+
+  }
+
+  .MyDiv1{
+    background-color:green;
+    font-size: 20px;
+    height: 200px;
+    Color:#000; 
+    
+    border-width: 5px;
+    border-color: blue;
+    border-style: solid;
+
+  }
+
+  .MyDiv2{
+
+     background-color: greenyellow;
+    font-size: 20px;
+    height: 200px;
+    Color:#000; 
+    border: 5px solid blue;   
+}
