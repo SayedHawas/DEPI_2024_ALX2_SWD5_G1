@@ -297,3 +297,24 @@ DriveInfo, Directory , DirectoryInfo ,File ,FileInfo
  
 	•<label>                              Self
 
+JavaScript
+-------------------
+Introduction to JavaScript
+
+Understanding the role of JavaScript in web development
+
+Exploring the syntax and structure of JavaScript
+
+Writing your first JavaScript code
+
+Learning about variables, data types, and operators
+
+Control Structures and Functions
+
+Delving into control structures: if-else, loops, and switch statements
+
+Understanding functions: declaration, parameters, return values, and scope
+
+Working with arrays and objects in JavaScript
+
+
