@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<noscript>
+    <hr>
+      <h1  style="text-align: center; color: brown;"> Java Script was Stop on Your Browser ...</h1>
+    <hr> 
+</noscript>
+    <!--  
+        1- Script tag in body 
+        2- Script tag in head 
+        3- Script External File 
+        4- Event in input type 
+    -->
+
+    <ul id="list">
+
+    </ul>
+
+    <!--Id For Css And Javascript Selector -->
+    <!-- Name To Send Data to Back-End -->
+     <table>
+        <tr>
+            <td><label for="num1"> Number 1:</label></td>
+            <td> <input type="text" id="num1"  name="firstNum" placeholder="Enter 1 Number" ></td>
+        </tr>
+        <tr>
+            <td><label for="num2"> Number 2:</label></td>
+            <td> <input type="text" id="num2"  name="secondNum" placeholder="Enter 2 Number"></td>
+        </tr>
+
+        <!--
+         Deal With Input 
+         Call Javascript into Event 
+         Deal With Nest Function 
+         Pass Element As Parameters 
+
+
+             ==>debugger;
+             Developer Tools On Browser 
+                ==> Console    Console.log(-- Data --);
+                ==> Source tab in Developer Tools 
+                        Next step   
+
+        -->
+        <tr>
+            <td colspan="2">
+                <button  onclick="ShowResult('result',Sum('num1', 'num2')) ;">Sumation</button>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <output id="result"></output>
+            </td>
+            <td></td>
+        </tr>
+     </table>
+ 
+   
+ 
+   
+
+    <br>
+
+    <br />
+    <script>
+
+        function ShowResult(tagName, dataShow)
+        {
+            document.getElementById(tagName).innerHTML = dataShow;
+        }
+        //Function  Block of code
+        //Void
+        function Sayhello(name) {
+            document.writeln("Hello " + name)
+        }
+
+        //call
+        Sayhello("sayed");
+        //return Data type 
+        function Sum (x , y)
+        {
+            //debugger;
+            //Element Id to get value 
+            var n1 = document.getElementById(x).value;
+            console.log(n1)
+            var n2 = document.getElementById(y).value;
+            var z = parseInt(n1) + parseInt(n2);
+            //var b = parseFloat(x) + parseFloat(y);
+            return z;
+        }
+
+        //document.writeln(" <br /> Total is : " +  Sum(100,500).toString());
+        //3 Anonymous function
+        var EmployeeSalary = function(salary , OverTime) 
+        {
+              return parseFloat(salary) + parseFloat(OverTime);
+        }
+
+        document.writeln(" <br /> Total Salary  : " +  EmployeeSalary(15000,2000));
+
+    </script>
+
+<br/>
+    <script>
+        var colorArr= new Array();
+        colorArr[0]="red";
+        colorArr[1]="yellow";
+        colorArr[2]="Blue";
+
+        for(var i =0;i<colorArr.length;i++)
+        {
+                // var liChild =    document.getElementById("list").appendChild("li");  <li> </li>
+                // liChild.textContent = colorarr[i]
+            document.write( "<span style='color:"+colorArr[i]+";'>" +  colorArr[i] + "</span> <br/>");
+        }
+
+        //Forin
+        //ForOf
+        //Page Cal 
+
+    </script>
+</body>
+</html>
