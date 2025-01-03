@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="MyScript.js"></script>
+    <!-- Script-->
+     <script>
+        //window.alert("Welcome JS From Head ...");
+     </script>
+</head>
+<body>
+
+    <!--In Body -->
+    <h1 style="color:red;"> Welcome in JavaScript </h1>
+    <p style="color:blue ;font-size: 20px;" id="mypara"></p>
+    <!--Comment-->
+    <script>
+     //Javascript Code 
+     /*
+       Deal With DOM By Using JS 
+     */
+        document.getElementById("mypara").innerHTML ="Add Content From JS ...";
+
+        // "Welcome in 'Javascript ''Js'' '"
+        document.writeln("<p style='color:red;'> Add Element From JS </p>");
+        document.writeln("Welcome From JS in Documents...."); //Page Docuemnt
+       // window.alert("Welcome JS From Body ..."); //Call Message From Browser
+
+    /*
+        Variables
+    -- > Java script is loosely Type 
+    Can't Know the datatype after asing datavalue     
+    */
+    // var x = 5;  ---> datatype is number
+    // var greeting = "Hello";
+    // Typeof(x);        ----> number
+    // Typeof(greeting); ----> string
+    
+    // const ApplicationName ="Java Script App";
+
+    // var Number = 5;
+    // var name = "Sayed Hawas";
+    // var Qua = false;
+    //var Number = "Toto";
+
+    // let Num = 100.50;
+    // Num = 50;
+
+    // var x ;
+    // var y = null;
+    // //Output 
+    //  window.alert(typeof(Number));
+    //  window.alert(typeof(name));
+    //  window.alert(typeof(Qua));
+    //  window.alert(typeof(Num));
+    //  window.alert(typeof(x));
+    //  alert(typeof(y));
+
+
+      //Input & Out output
+      //  var yourName = prompt("Enter your Name : ","Your Name ");
+      //  alert("Welcome "+ yourName);
+
+
+     //Operator  + , - , * , / , ++,-- ,= , += ,== === < > ! Not && || 
+
+     var xx = 10;
+     xx+=20;
+
+     var N = 5+10;
+     //alert(++N) ;
+     N+=10;
+
+     var t = 5 > 7;
+
+     var v = (5<7) && (1==1)
+     
+     v = "1" == 1;   //true
+     document.writeln("<br/>" + v);
+     v = "1" === 1;  //false
+     document.writeln("<br/>" + v);
+     v = 1===1;      //true
+     document.writeln("<br/>" + v);
+     v="1" ==="1";   //true
+     document.writeln("<br/>" + v);
+     v = "5" == 6;   //false
+     document.writeln("<br/>" + v);
+
+    </script>
+</body>
+</html>
