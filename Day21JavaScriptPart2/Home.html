@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!--The Document Object model (DOM) -->
+    <!-- ForIn  Index   & ForOf Value  -->
+     <form name="MyForm" id="Myfrom" name="myForm" action="#" method="post" > <!--novalidate  Get  -->  
+        <table>
+            <tr>
+                <td><label for="requestId">ID</label></td>
+                <td><input type="hidden" id="requestId" name="requestId" value="100" /></td>
+            </tr>
+            <tr>
+                <td><label for="IDNumber">IDNumber</label></td>
+                <td><input type="tel" id="IDNumber" name="IDNumber" value="12345678996321"  disabled /></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile</label></td>
+                <td><input type="tel" id="mobile" name="mobile"  pattern="^01[0-2,5]{1}\d{8}$" title="Must Enter the Correct Mobile Like 012# #########"  /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" required  /></td>
+            </tr>
+            <tr>
+                <td><label for="code">Code</label></td>
+                <td><input type="text" id="code" value="#100" readonly /></td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="txtUsername"> UserName </label>
+                </td>
+                <td>
+                    <input type="text" id="txtUsername" Name="userName" placeholder="EnterYour Name" required title="Please Enter your Name ">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="txtPassword"> Password </label>
+                </td>
+                <td>
+                    <input type="password" id="txtPassword" Name="passWord" placeholder="EnterYour Password" required title="Please Enter your Password ">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="txtSalary"> Salary </label>
+                </td>
+                <td>
+                    <input type="number" id="txtSalary" Name="salary" min="0" max="15000" value="100" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- <button id="fillData" onclick="ShowDate('showResult')"> Press To fill</button> -->
+                </td>
+                <td>
+                    <output id="showResult"></output>
+                </td>
+            </tr>
+              
+            <tr>
+                <td>
+                    <input type="submit" value="Login" onsubmit="">
+                </td>
+                <td>
+                    <input type="reset" value="clean">
+                </td>
+            </tr>
+        </table>
+
+     </form>
+
+
+    <script>
+        function ShowDate(elementId) {
+            document.getElementById(elementId).value= new Date();
+        }
+    </script>
+</body>
+</html>
