@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var Account ={
+        id : 1,
+        name : "Ahmed",
+        balance : 1000,
+        numTransactions : 1,
+
+        //  function deposit (amount) {
+        //   return   balance += amount;
+        // }
+          
+         deposit:function(amount)
+        {
+           return   this. balance += amount;
+        }
+    
+                // Plus other methods…
+            // };
+       };
+    </script>
+
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+    <!-- <script>
+       document.getElementById("demo").innerHTML = parseInt(Math.round(1.86));
+      
+       var x = "a10" ;
+       if(isNaN(x))  //Not A Number
+       {
+          alert(" Not A number ");
+       }
+       else 
+       {
+         alert("Is Number ");
+       }
+
+
+
+       var employee1 = new Object();
+       var employee2 = {};
+       employee1.firstName = "Ahmed";
+    
+    </script> -->
+    <p id="showData2"></p>
+    <script>
+        //   var employee1 = {};
+        //     employee1.name = "sayed hawas";
+        //     employee1.age = 35;
+        //     employee1.salary = 5000;
+    
+        //     employee1.payRise = function (amount) {
+        //         // Inside a method, "this" means the current object.
+        //         this.salary += amount;
+        //         return this.salary;
+        //     }
+    
+        //     document.getElementById("demo").innerHTML = "Name : " + employee1.name + " age : " + employee1.age + " Salary : "+ employee1.salary + " NetSalary :" + employee1.payRise(500);
+   
+       
+
+        
+         
+            // var acc2 = new Account(2, "Mariam" , 2000 , 2);
+    
+            // document.getElementById("showData2").innerHTML =  acc1.id + " " + acc1.name + "<br />";
+            // document.getElementById("showData2").innerHTML += acc2.id + " " + acc2.name + "<br />";
+
+            
+              // Account.prototype = {
+               var acc1= Account;
+             
+            document.getElementById("showData2").innerHTML = " balance "+ acc1.balance  + " " +  acc1.id + " " + acc1.name + " "+ acc1.deposit(100) + "<br />";
+           // document.getElementById("showData2").innerHTML += acc2.id + " " + acc2.name + "<br />";
+   </script>
+
+
+
+
+<script>
+      var test = {};
+      test.id = 1;
+      test.name = "Ahmed";
+      
+
+      var test2 = {
+       id:2,
+       name:"Ali",
+ 
+
+       newName : function()
+       {
+           return  "Welcome " + this.name;
+       }
+      };
+</script>
+</body>
+</html>
