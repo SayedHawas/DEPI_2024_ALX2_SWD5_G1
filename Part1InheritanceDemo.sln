@@ -53,7 +53,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day19HTML5CSSPart1", "Day19
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day20JavaScriptPart1", "Day20JavaScriptPart1\Day20JavaScriptPart1.csproj", "{3C35C6C1-6948-4ABC-9E22-6BF1679CECC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day21JavaScriptPart2", "Day21JavaScriptPart2\Day21JavaScriptPart2.csproj", "{49F40E19-ACC0-4320-A1B2-656654BDFAFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day21JavaScriptPart2", "Day21JavaScriptPart2\Day21JavaScriptPart2.csproj", "{49F40E19-ACC0-4320-A1B2-656654BDFAFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day22JavaScriptPart1", "Day22JavaScriptPart1\Day22JavaScriptPart1.csproj", "{855E37DF-1EDA-464C-BD05-9533E822027D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{49F40E19-ACC0-4320-A1B2-656654BDFAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49F40E19-ACC0-4320-A1B2-656654BDFAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49F40E19-ACC0-4320-A1B2-656654BDFAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855E37DF-1EDA-464C-BD05-9533E822027D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855E37DF-1EDA-464C-BD05-9533E822027D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855E37DF-1EDA-464C-BD05-9533E822027D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855E37DF-1EDA-464C-BD05-9533E822027D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
