@@ -55,7 +55,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day20JavaScriptPart1", "Day
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day21JavaScriptPart2", "Day21JavaScriptPart2\Day21JavaScriptPart2.csproj", "{49F40E19-ACC0-4320-A1B2-656654BDFAFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day22JavaScriptPart1", "Day22JavaScriptPart1\Day22JavaScriptPart1.csproj", "{855E37DF-1EDA-464C-BD05-9533E822027D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day22JavaScriptPart1", "Day22JavaScriptPart1\Day22JavaScriptPart1.csproj", "{855E37DF-1EDA-464C-BD05-9533E822027D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1WebAPIPart1", "Day1WebAPIPart1\Day1WebAPIPart1.csproj", "{4B05C6D9-64AC-4FDA-B9FD-ACFDE0E71330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCFirstAppWebApiPart2", "MVCFirstAppWebApiPart2\MVCFirstAppWebApiPart2.csproj", "{FF0CC84F-1536-4760-B0CC-04A0CF93FFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIFirstPart3", "WebAPIFirstPart3\WebAPIFirstPart3.csproj", "{AFABE108-DE3E-4BB9-A23E-2119FD1EEF7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +177,18 @@ Global
 		{855E37DF-1EDA-464C-BD05-9533E822027D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{855E37DF-1EDA-464C-BD05-9533E822027D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{855E37DF-1EDA-464C-BD05-9533E822027D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B05C6D9-64AC-4FDA-B9FD-ACFDE0E71330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B05C6D9-64AC-4FDA-B9FD-ACFDE0E71330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B05C6D9-64AC-4FDA-B9FD-ACFDE0E71330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B05C6D9-64AC-4FDA-B9FD-ACFDE0E71330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0CC84F-1536-4760-B0CC-04A0CF93FFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0CC84F-1536-4760-B0CC-04A0CF93FFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0CC84F-1536-4760-B0CC-04A0CF93FFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0CC84F-1536-4760-B0CC-04A0CF93FFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFABE108-DE3E-4BB9-A23E-2119FD1EEF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFABE108-DE3E-4BB9-A23E-2119FD1EEF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFABE108-DE3E-4BB9-A23E-2119FD1EEF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFABE108-DE3E-4BB9-A23E-2119FD1EEF7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
