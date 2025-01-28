@@ -8,11 +8,6 @@ namespace WebApiDay2Part1.Controllers
     public class EmployeesController : ControllerBase
     {
 
-
-        //public EmployeesController()
-        //{
-        //    Employee em = new Employee {  };   
-        //}
         public static List<Employee> EmployeesList = new List<Employee>()
         {
           new Employee{ Id = 1 , Name="Ahmed", Job = "Developer" },
@@ -42,9 +37,27 @@ namespace WebApiDay2Part1.Controllers
             EmployeesList.Add(newEmployee);
 
         }
-        //[HttpPut]
+        [HttpPut]
+        public void Update(Employee newEmployee)
+        {
+            var employee = EmployeesList.FirstOrDefault(e => e.Id == newEmployee.Id);
+            if (employee != null)
+            {
+                employee.Name = newEmployee.Name;
+                employee.Job = newEmployee.Job;
+            }
+        }
 
-        //[HttpDelete]
+
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+            var employee = EmployeesList.FirstOrDefault(e => e.Id == id);
+
+            if (employee != null)
+                EmployeesList.Remove(employee);
+
+        }
 
 
     }
