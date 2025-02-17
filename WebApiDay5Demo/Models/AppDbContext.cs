@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace WebApiCRUDDay3Demo.Models
+namespace WebApiDay5Demo.Models
 {
-    //1- create Class Inhert from DbContext Microsoft.EntityFrameworkCore
     public class AppDbContext : DbContext
     {
         //2- Create CTOR
@@ -18,7 +17,6 @@ namespace WebApiCRUDDay3Demo.Models
 
         //3- DbSet For All Classes in DbContext
         public DbSet<Department> Departments { get; set; }
-        public DbSet<Employee> Employees { get; set; } // Call as Table 
 
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -38,6 +36,5 @@ namespace WebApiCRUDDay3Demo.Models
                 );
             base.OnModelCreating(modelBuilder);
         }
-
     }
 }
