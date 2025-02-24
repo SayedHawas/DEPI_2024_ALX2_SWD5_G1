@@ -67,7 +67,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiDay2Part1", "WebApiDa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCRUDDay3Demo", "WebApiCRUDDay3Demo\WebApiCRUDDay3Demo.csproj", "{1CF5D1B5-6DB2-4C8A-A37F-F8342492274E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiDay5Demo", "WebApiDay5Demo\WebApiDay5Demo.csproj", "{C35527C4-9A27-443D-8FC4-9527B7BB2ACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiDay5Demo", "WebApiDay5Demo\WebApiDay5Demo.csproj", "{C35527C4-9A27-443D-8FC4-9527B7BB2ACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day28DatabaseFirst", "Day28DatabaseFirst\Day28DatabaseFirst.csproj", "{249826F1-D5E9-4208-BAD3-F475C3BE3A00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -207,6 +209,10 @@ Global
 		{C35527C4-9A27-443D-8FC4-9527B7BB2ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C35527C4-9A27-443D-8FC4-9527B7BB2ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C35527C4-9A27-443D-8FC4-9527B7BB2ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249826F1-D5E9-4208-BAD3-F475C3BE3A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249826F1-D5E9-4208-BAD3-F475C3BE3A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249826F1-D5E9-4208-BAD3-F475C3BE3A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249826F1-D5E9-4208-BAD3-F475C3BE3A00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
