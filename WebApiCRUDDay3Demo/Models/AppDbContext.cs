@@ -15,12 +15,10 @@ namespace WebApiCRUDDay3Demo.Models
         {
 
         }
-
         //3- DbSet For All Classes in DbContext
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; } // Call as Table 
-
-
+        public DbSet<Company> Companies { get; set; }
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    //base.OnConfiguring(optionsBuilder);

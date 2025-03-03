@@ -2,10 +2,14 @@
 
 namespace WebApiCRUDDay3Demo.Core.Repositories.Interface
 {
+    //public interface IRepository<T,TKey> where T : class
     public interface IRepository<T> where T : class
     {
         IEnumerable<T> GetAll();
+        //T GetById(TKey id);
         T GetById(int id);
+        //T GetById(long id);
+        //T GetById(string id);
         void Add(T entity);
         void Update(T entity);
         void Delete(int id);
