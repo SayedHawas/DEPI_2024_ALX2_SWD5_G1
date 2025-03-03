@@ -4,7 +4,7 @@ using WebApiCRUDDay3Demo.Models;
 
 namespace WebApiCRUDDay3Demo.BL.Implement
 {
-    public class ServiceDepartment : IService<Department>
+    public class ServiceDepartment : IServiceDepartment
     {
         private readonly IUnitOfWork _unitOfWork;
         public ServiceDepartment(IUnitOfWork unitOfWork)
@@ -38,9 +38,6 @@ namespace WebApiCRUDDay3Demo.BL.Implement
         {
             _unitOfWork.DepartmentRepository.Update(entity);
             _unitOfWork.Complete();
-
-
-
         }
         #endregion
         #region Operations

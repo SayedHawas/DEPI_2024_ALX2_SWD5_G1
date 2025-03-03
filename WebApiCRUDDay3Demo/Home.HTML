@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h2>All Departments</h2>
+        <h1> Get All Department </h1>
+        <ul id="Departments" ></ul>
+      </div>
+      <div>
+        <h2>Search by ID</h2>
+        <input type="text" id="departmentid" size="5" />
+        <input type="button" value="Search" onclick="find();" />
+        <h1> Get By ID </h1>
+        <p id="department" ></p>
+      </div>
+    
+      Json Data Javascript Anotation 
+      asyc Java Script XML
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+  <script>
+    var uri = 'http://localhost:5276/api/Departments';
+   // var uri = 'http://localhost:5276/api/Departments/GetDepartments';// all
+    //var x = 'http://localhost:5276/api/Departments/2';  // By ID 
+
+    $(document).ready(function () {
+      // Send an AJAX request
+      $.getJSON(uri+'/GetDepartments')
+          .done(function (data) {
+            console.log(data);
+			//On success, 'data' contains a list of Departments.
+            $.each(data, function (key, item) {
+			
+              // Add a list item for the Employee.
+              $('<li>', { text: formatItem(item) }).appendTo($('#Departments'));
+            });
+          });  
+    });
+
+    function formatItem(item) {
+      return item.name + ':' + item.description;
+    }
+
+    function find() {
+      var id = $('#departmentid').val();
+      $.getJSON(uri + '/' + id)
+          .done(function (data) {
+            $('#department').text(formatItem(data));
+          })
+          .fail(function (jqXHR, textStatus, err) {
+            $('#department').text('Error: ' + err);
+          });
+    }
+  </script>
+</body>
+</html>

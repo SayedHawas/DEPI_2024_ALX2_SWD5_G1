@@ -27,6 +27,11 @@ namespace WebApiCRUDDay3Demo
                options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
             );
 
+            builder.Services.AddCors(options => options.AddPolicy("MyCors", CorsPolicyBuilder =>
+            {
+                CorsPolicyBuilder.AllowAnyOrigin();
+            }));
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -44,6 +49,7 @@ namespace WebApiCRUDDay3Demo
 
             app.UseAuthorization();
 
+            app.UseCors("MyCors");
 
             app.MapControllers();
 

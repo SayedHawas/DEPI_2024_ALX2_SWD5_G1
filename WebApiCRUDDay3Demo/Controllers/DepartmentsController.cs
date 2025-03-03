@@ -126,7 +126,7 @@ namespace WebApiCRUDDay3Demo.Controllers
         // POST: api/Departments
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public IActionResult PostDepartment(DepartmentDTO department)//(Department department)
+        public IActionResult PostDepartment([FromForm] DepartmentDTO department)//(Department department)
         {
             _ServiceDepartment.Add(new Department { Name = department.Name, Description = department.Description });
             // _context.Departments.Add(new Department { Name = department.Name, Description = department.Description });
