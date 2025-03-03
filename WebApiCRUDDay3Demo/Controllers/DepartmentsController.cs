@@ -1,19 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebApiCRUDDay3Demo.BL.Interface;
 using WebApiCRUDDay3Demo.DTOs;
 using WebApiCRUDDay3Demo.Models;
 
 namespace WebApiCRUDDay3Demo.Controllers
 {
+
+    //DTO  Two Way --> Insert , Query 
+
     [Route("api/[controller]")]
     [ApiController]
     public class DepartmentsController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        //private readonly AppDbContext _context;
+        //Service
+        //private readonly ServiceDepartment _ServiceDepartment;
+        private readonly IService<Department> _ServiceDepartment;
 
-        public DepartmentsController(AppDbContext context)
+        // public DepartmentsController(AppDbContext context)
+        public DepartmentsController(IService<Department> serviceDepartment)
         {
-            _context = context;
+            _ServiceDepartment = serviceDepartment;
         }
 
         // GET: api/Departments
@@ -48,23 +56,28 @@ namespace WebApiCRUDDay3Demo.Controllers
             //}
 
             #endregion
-            var departments = _context.Departments.AsNoTracking().Select(s => new DepartmentDTO { DepartmentId = s.DepartmentId, Name = s.Name, Description = s.Description }).ToList();
+
+            //var departments = _context.Departments.AsNoTracking().Select(s => new DepartmentDTO { DepartmentId = s.DepartmentId, Name = s.Name, Description = s.Description }).ToList();
+            //return Ok(departments);
+            var departments = _ServiceDepartment.GetAll();
             return Ok(departments);
         }
 
-        [HttpGet("GetDepartmentsWithEmployees")]
-        public IActionResult GetDepartmentsWithEmployees()
-        {
-            var department = _context.Departments.Include("Employees").ToList();
-            return Ok(department);
-        }
+        //[HttpGet("GetDepartmentsWithEmployees")]
+        //public IActionResult GetDepartmentsWithEmployees()
+        //{
+        //    //var department = _context.Departments.Include("Employees").ToList();
+        //    //return Ok(department);
+        //    var departments = _ServiceDepartment.GetDepartmentsWithEmps();
+        //    return Ok(departments);
+        //}
 
         // GET: api/Departments/5
         [HttpGet("{id}")]
         public IActionResult GetDepartment(int id)
         {
-            var department = _context.Departments.Find(id);
-
+            // var department = _context.Departments.Find(id);
+            var department = _ServiceDepartment.GetByID(id);
             if (department == null)
             {
                 return NotFound();
@@ -77,18 +90,23 @@ namespace WebApiCRUDDay3Demo.Controllers
         [HttpPut("{id}")]
         public IActionResult PutDepartment(int id, DepartmentDTO departmentDto) // Department department)
         {
+            //Logs
             if (id != departmentDto.DepartmentId)
             {
                 return BadRequest();
             }
-            var SelectDepartment = _context.Departments.Find(id);
-            SelectDepartment.Name = departmentDto.Name;
-            SelectDepartment.Description = departmentDto.Description;
-            //_context.Entry(department).State = EntityState.Modified;
-
             try
             {
-                _context.SaveChanges();
+                var SelectDepartment = _ServiceDepartment.GetByID(id);
+                SelectDepartment.Name = departmentDto.Name;
+                SelectDepartment.Description = departmentDto.Description;
+                _ServiceDepartment.Update(SelectDepartment);
+
+                //var SelectDepartment = _context.Departments.Find(id);
+                //SelectDepartment.Name = departmentDto.Name;
+                //SelectDepartment.Description = departmentDto.Description;
+                //_context.Entry(department).State = EntityState.Modified;
+                //_context.SaveChanges();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -110,8 +128,9 @@ namespace WebApiCRUDDay3Demo.Controllers
         [HttpPost]
         public IActionResult PostDepartment(DepartmentDTO department)//(Department department)
         {
-            _context.Departments.Add(new Department { Name = department.Name, Description = department.Description });
-            _context.SaveChanges();
+            _ServiceDepartment.Add(new Department { Name = department.Name, Description = department.Description });
+            // _context.Departments.Add(new Department { Name = department.Name, Description = department.Description });
+            //_context.SaveChanges();
             return CreatedAtAction("GetDepartment", new { id = department.DepartmentId }, department);
         }
 
@@ -119,20 +138,23 @@ namespace WebApiCRUDDay3Demo.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteDepartment(int id)
         {
-            var department = _context.Departments.Find(id);
+            var department = _ServiceDepartment.GetByID(id);
+            //var department = _context.Departments.Find(id);
             if (department == null)
             {
                 return NotFound();
             }
 
-            _context.Departments.Remove(department);
-            _context.SaveChanges();
+            _ServiceDepartment.Delete(id);
+            //_context.Departments.Remove(department);
+            //_context.SaveChanges();
             return NoContent();
         }
 
         private bool DepartmentExists(int id)
         {
-            return _context.Departments.Any(e => e.DepartmentId == id);
+            // return _context.Departments.Any(e => e.DepartmentId == id);
+            return _ServiceDepartment.GetAll().Any(e => e.DepartmentId == id);
         }
     }
 }

@@ -7,6 +7,7 @@ namespace WebApiCRUDDay3Demo.Core.Repositories.Implementing
 {
     public class Repository<T> : IRepository<T> where T : class
     {
+        //private readonly AppDbContext _appDbContext;
         protected readonly DbContext _context;
         private readonly DbSet<T> _dbSet;
         public Repository(DbContext context)
@@ -18,6 +19,7 @@ namespace WebApiCRUDDay3Demo.Core.Repositories.Implementing
         {
             try
             {
+                //_appDbContext.Employees.ToList();
                 return _dbSet.AsNoTracking().ToList();
             }
             catch (Exception)
@@ -25,7 +27,6 @@ namespace WebApiCRUDDay3Demo.Core.Repositories.Implementing
                 return null;
             }
         }
-
         public T GetById(int id)
         {
             var keyName = _context.Model.FindEntityType(typeof(T)).FindPrimaryKey().Properties.Select(x => x.Name).Single();
@@ -66,7 +67,6 @@ namespace WebApiCRUDDay3Demo.Core.Repositories.Implementing
                 return -1;
             }
         }
-
         public IEnumerable<T> GetAllIncluding(params string[] includes)
         {
             IQueryable<T> query = _dbSet.AsQueryable();

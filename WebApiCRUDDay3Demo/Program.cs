@@ -1,4 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using WebApiCRUDDay3Demo.BL.Implement;
+using WebApiCRUDDay3Demo.BL.Interface;
+using WebApiCRUDDay3Demo.Core.UnitOfWorks.Implementing;
+using WebApiCRUDDay3Demo.Core.UnitOfWorks.Interface;
 using WebApiCRUDDay3Demo.Models;
 
 namespace WebApiCRUDDay3Demo
@@ -10,6 +14,13 @@ namespace WebApiCRUDDay3Demo
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IService<Department>, ServiceDepartment>();
+            builder.Services.AddScoped<IService<Employee>, ServiceEmployee>();
+            builder.Services.AddScoped<IService<Company>, ServiceCompany>();
+
+
             //EFCore Using SQLServer Class  AppDbContext
             //Not HardCode 
             builder.Services.AddDbContext<AppDbContext>(
