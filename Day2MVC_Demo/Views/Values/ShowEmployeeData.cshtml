@@ -1,0 +1,25 @@
+﻿
+@{
+    var empViewData = (Day2MVC_Demo.Models.Employee)ViewData["emp"];
+}
+
+ID : @empViewData.ID
+<br />
+       Name : @(@empViewData.Name + " " + @empViewData.Job)
+<br />
+       salary : @empViewData.Salary.ToString("C")
+<br />
+
+
+
+<p> Using ViewBag </p>
+@{
+    Employee emp = ViewBag.Emp;
+}
+       ID : @emp.ID
+<br />
+       Name : @(@emp.Name + " " + @emp.Job)
+<br />
+       salary : @emp.Salary.ToString("C")
+
+

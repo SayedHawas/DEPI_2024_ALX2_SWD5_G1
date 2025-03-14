@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumingWebAPIDemo", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCFirstAppDemo", "MVCFirstAppDemo\MVCFirstAppDemo.csproj", "{97A48B1C-7887-4E4F-822A-99173C37C45F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2MVC_Demo", "Day2MVC_Demo\Day2MVC_Demo.csproj", "{5EBE5CBC-EAC3-460B-B9FF-0D525CDE9550}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{97A48B1C-7887-4E4F-822A-99173C37C45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A48B1C-7887-4E4F-822A-99173C37C45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A48B1C-7887-4E4F-822A-99173C37C45F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBE5CBC-EAC3-460B-B9FF-0D525CDE9550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBE5CBC-EAC3-460B-B9FF-0D525CDE9550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBE5CBC-EAC3-460B-B9FF-0D525CDE9550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBE5CBC-EAC3-460B-B9FF-0D525CDE9550}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
