@@ -1,0 +1,23 @@
+﻿@{ 
+    Layout = "_Layout";
+    var weekDay = DateTime.Now.DayOfWeek;
+}
+
+<p>Today is: @weekDay</p>
+<h1> Welcome From MVC Core </h1>
+
+@for (var i = 10; i < 16; i++)
+{
+    <p style="font-size: @(i + "pt")">My font size is now: @i</p>
+}
+
+
+<ul>
+    @{
+        List<int> Numbers = new List<int>() { 1, 25, 44, 887, 78, 55 };
+    }
+    @foreach (var myItem in Numbers)
+    {
+        <li>@myItem</li>
+    }
+</ul>

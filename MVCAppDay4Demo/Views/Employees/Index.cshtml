@@ -1,0 +1,24 @@
+﻿@model MVCAppDay4Demo.Models.Employee 
+@{
+    @*Strong type View *@
+    Layout = "_Layout";
+}
+
+
+<h2>View Employee With C# Code in Razor </h2>
+Full Name : @Model.Name
+<br />
+Job : @Model.Job
+<br />
+Salary : @Model.Salary.ToString("C")
+<br />
+
+@if (Model.Salary >= 20000)
+{
+    <span style="color:green;font-weight:bold"> Employee Salary: @Model.Salary.ToString("C")</span>
+}
+else
+{
+    <span style="color:red ;font-weight:bold"> Employee Salary: @Model.Salary.ToString("C")</span>
+}
+

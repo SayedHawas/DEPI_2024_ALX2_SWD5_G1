@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MVCAppDay4Demo.Models;
+using System.Diagnostics;
 
 namespace MVCAppDay4Demo.Controllers;
 
@@ -27,5 +27,12 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    //Add Action 
+    //How To Add View 
+    public IActionResult MyAction()
+    {
+        return View();
     }
 }
