@@ -1,0 +1,34 @@
+﻿@model MVCAppDay4Demo.Models.Product
+<div>
+
+
+  <form action="/Products/create" method="post">
+        <fieldset>
+            <legend> Create New Product</legend>
+              <div class="row">
+                <div class="row">
+                    <label for="txtID"> ID </label>
+                    <input type="text" id="txtID" name="ID" readonly="readonly" class="form-control" />
+                </div>
+                <div class="row">
+                    <label for="txtName"> Name </label></td>
+                    <input type="text" id="txtName" name="Name" class="form-control" placeholder="Enter Product Name" />
+                </div>
+                <div class="row">
+                    <label for="txtPrice"> Price </label></td>
+                    <input type="number" id="txtPrice" name="Price" class="form-control" placeholder="Enter Product Price " />
+                </div>
+                    <div class="row">
+                   <label for="txtDescription"> Description </label></td>
+                   <input type="text" id="txtDescription" name="Description" class="form-control" placeholder="Enter Product Description" />
+                </div>
+                <div class="row">
+                    <input type="submit" value="Create" class="btn-success" />
+                </div>
+              </div>
+        </fieldset>
+</form>
+</div>
+
+   
+               
