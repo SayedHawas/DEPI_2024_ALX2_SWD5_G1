@@ -1,24 +1,47 @@
-﻿@model MVCAppDay4Demo.Models.Employee 
+﻿@model IEnumerable<MVCAppDay4Demo.Models.Employee>
+
 @{
-    @*Strong type View *@
-    Layout = "_Layout";
+    ViewData["Title"] = "Index";
 }
 
+<h1>Index</h1>
 
-<h2>View Employee With C# Code in Razor </h2>
-Full Name : @Model.Name
-<br />
-Job : @Model.Job
-<br />
-Salary : @Model.Salary.ToString("C")
-<br />
-
-@if (Model.Salary >= 20000)
-{
-    <span style="color:green;font-weight:bold"> Employee Salary: @Model.Salary.ToString("C")</span>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Job)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Job)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
 }
-else
-{
-    <span style="color:red ;font-weight:bold"> Employee Salary: @Model.Salary.ToString("C")</span>
-}
-
+    </tbody>
+</table>
