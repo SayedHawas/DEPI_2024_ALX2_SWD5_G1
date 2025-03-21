@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<MVCAppDay4Demo.Models.Product>
 
 @{
-    ViewData["Title"] = "List Of Products";
+    ViewData["Title"] = "Index";
 }
 
-<h1>List Of Products</h1>
+<h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a> |  <a asp-action="Index" asp-controller="Home">Back to Home</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -43,7 +43,7 @@
                 @Html.DisplayFor(modelItem => item.Image)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary" >Edit</a> |
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
