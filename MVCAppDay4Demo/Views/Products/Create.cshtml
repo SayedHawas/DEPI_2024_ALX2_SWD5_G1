@@ -1,34 +1,64 @@
 ﻿@model MVCAppDay4Demo.Models.Product
-<div>
 
+@{
+    ViewData["Title"] = "Create";
+}
 
-  <form action="/Products/create" method="post">
-        <fieldset>
-            <legend> Create New Product</legend>
-              <div class="row">
-                <div class="row">
-                    <label for="txtID"> ID </label>
-                    <input type="text" id="txtID" name="ID" readonly="readonly" class="form-control" />
-                </div>
-                <div class="row">
-                    <label for="txtName"> Name </label></td>
-                    <input type="text" id="txtName" name="Name" class="form-control" placeholder="Enter Product Name" />
-                </div>
-                <div class="row">
-                    <label for="txtPrice"> Price </label></td>
-                    <input type="number" id="txtPrice" name="Price" class="form-control" placeholder="Enter Product Price " />
-                </div>
-                    <div class="row">
-                   <label for="txtDescription"> Description </label></td>
-                   <input type="text" id="txtDescription" name="Description" class="form-control" placeholder="Enter Product Description" />
-                </div>
-                <div class="row">
-                    <input type="submit" value="Create" class="btn-success" />
-                </div>
-              </div>
-        </fieldset>
-</form>
+<h1 id="createHeader">Create</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="None" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
 </div>
 
-   
-               
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@section MySection {
+    <script>
+        window.alert("Welcome From My Section");
+    </script>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+@section MyStyle
+{
+    <style>
+        #createHeader{
+          color:red;
+        }
+    </style>
+}
+

@@ -14,7 +14,7 @@ namespace MVCAppDay4Demo.Models
         [MaxLength(300, ErrorMessage = "Must Enter 300 Letters")]
         public string Description { get; set; }
         [Required]
-        [Range(0, 99999)]
+        [Range(0, 99999, ErrorMessage = "Must enter Number between 0 To 99999")]
         public double Price { get; set; }
         //Static File 
         public string Image { get; set; }

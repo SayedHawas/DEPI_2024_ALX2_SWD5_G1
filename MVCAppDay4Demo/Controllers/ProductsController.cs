@@ -10,10 +10,10 @@ namespace MVCAppDay4Demo.Controllers
         {
             _appDbContext = appDbContext;
         }
-        //List 
-        public IActionResult Index()
+        // Index --> List  
+        public async Task<IActionResult> Index()
         {
-            var products = _appDbContext.Products.ToList();
+            var products = await _appDbContext.Products.ToListAsync();
             return View(products);
         }
         //public 
@@ -24,13 +24,20 @@ namespace MVCAppDay4Demo.Controllers
             return View();
         }
         //Create Post (Insert Data)
-        [HttpPost]
-        public IActionResult Create(Product products)
-        {
-            //Validation
-            //Save 
 
-            return View();
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public async Task<IActionResult> Create(Product product)
+        {
+            //Validation Serve Side 
+            if (ModelState.IsValid)
+            {
+                //Save 
+                _appDbContext.Products.Add(product);
+                await _appDbContext.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(product);
         }
 
 

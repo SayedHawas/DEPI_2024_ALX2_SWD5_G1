@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2MVC_Demo", "Day2MVC_Dem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCAppDay4Demo", "MVCAppDay4Demo\MVCAppDay4Demo.csproj", "{8F69825D-2A72-491F-B6E8-DE7C8FB4DFF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncVsAsyncPeogramDemo", "SyncVsAsyncPeogramDemo\SyncVsAsyncPeogramDemo.csproj", "{D721324F-CAAF-433E-9D00-59632CC97C79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,10 @@ Global
 		{8F69825D-2A72-491F-B6E8-DE7C8FB4DFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F69825D-2A72-491F-B6E8-DE7C8FB4DFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F69825D-2A72-491F-B6E8-DE7C8FB4DFF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D721324F-CAAF-433E-9D00-59632CC97C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D721324F-CAAF-433E-9D00-59632CC97C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D721324F-CAAF-433E-9D00-59632CC97C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D721324F-CAAF-433E-9D00-59632CC97C79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
