@@ -17,6 +17,6 @@ namespace MVCAppDay4Demo.Models
         [Range(0, 99999, ErrorMessage = "Must enter Number between 0 To 99999")]
         public double Price { get; set; }
         //Static File 
-        public string Image { get; set; }
+        public string? Image { get; set; }
     }
 }

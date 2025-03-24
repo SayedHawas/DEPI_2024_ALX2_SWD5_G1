@@ -7,7 +7,9 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @* <a asp-action="Create">Create New</a> *@
+    <a asp-action="Create" class="btn btn-primary">Create </a>
+    <a asp-action="Gallery" class="btn btn-success"> Gallery</a>
 </p>
 <table class="table">
     <thead>
@@ -40,11 +42,15 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
+                @* @Html.DisplayFor(modelItem => item.Image) *@
+                @* <img src="@item.Image" alt="@item.Name" /> *@
+                @* <img src="@Url.Content("~/images/products/" + item.Image + ".jpg")" alt="@item.Name" width="50" /> *@
+                    <img src="@Url.Content("~/images/products/" + (item.Image ==""?"default.jpg":item.Image))" alt="@item.Name" width="50" />
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Card" asp-route-id="@item.Id">Card</a>|
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>

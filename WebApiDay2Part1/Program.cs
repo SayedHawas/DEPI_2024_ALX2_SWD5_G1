@@ -22,6 +22,7 @@ namespace WebApiDay2Part1
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

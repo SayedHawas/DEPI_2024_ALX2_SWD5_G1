@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using MVCAppDay4Demo.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace MVCAppDay4Demo.Controllers
 {
@@ -21,7 +14,22 @@ namespace MVCAppDay4Demo.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Products.ToListAsync());
+            var productList = await _context.Products.ToListAsync();
+            List<Product> products = new List<Product>();
+
+            foreach (var item in productList)
+            {
+                if (System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", item.Image))) //+ ".jpg"
+                {
+                    products.Add(item);
+                }
+                else
+                {
+                    item.Image = "";
+                    products.Add(item);
+                }
+            }
+            return View(products);
         }
 
         // GET: Products/Details/5
@@ -32,14 +40,21 @@ namespace MVCAppDay4Demo.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Products
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
                 return NotFound();
             }
-
-            return View(product);
+            if (System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", product.Image))) //+ ".jpg"
+            {
+                return View(product);
+            }
+            else
+            {
+                product.Image = "default";
+                return View(product);
+            }
+            //return View(product);
         }
 
         // GET: Products/Create
@@ -53,8 +68,20 @@ namespace MVCAppDay4Demo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,Image")] Product product)
+        public async Task<IActionResult> Create([Bind("Name,Price,Description")] Product product, IFormFile image)
         {
+            #region Deal with File Or stream
+            if (image != null && image.Length > 0)
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", image.FileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+                product.Image = image.FileName;
+            }
+            #endregion
             if (ModelState.IsValid)
             {
                 _context.Add(product);
@@ -122,9 +149,7 @@ namespace MVCAppDay4Demo.Controllers
             {
                 return NotFound();
             }
-
-            var product = await _context.Products
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
                 return NotFound();
@@ -152,5 +177,34 @@ namespace MVCAppDay4Demo.Controllers
         {
             return _context.Products.Any(e => e.Id == id);
         }
+
+        public async Task<IActionResult> Card(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var product = await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+            if (System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", product.Image)))
+            {
+                return View(product);
+            }
+            else
+            {
+                product.Image = "default.jpg";
+                return View(product);
+            }
+        }
+
+        public async Task<IActionResult> Gallery()
+        {
+            return View(await _context.Products.ToListAsync());
+        }
+
     }
 }
