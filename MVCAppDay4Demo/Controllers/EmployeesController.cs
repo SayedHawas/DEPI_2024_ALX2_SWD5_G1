@@ -114,13 +114,11 @@ namespace MVCAppDay4Demo.Controllers
             {
                 return NotFound();
             }
-
             var employee = await _context.Employees.FirstOrDefaultAsync(m => m.Id == id);
             if (employee == null)
             {
                 return NotFound();
             }
-
             return View(employee);
         }
 

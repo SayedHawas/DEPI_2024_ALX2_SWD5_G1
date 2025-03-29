@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MVCAppDay4Demo.Models.Product>
+@{
+    ViewData["Title"] = "Gallery";
+}
+
+<h2>Galley </h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var product in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <!-- Display the product photo -->
+                <img src="@Url.Content("~/images/products/" + product.Image)" class="card-img-top" alt="@product.Name" />
+
+                <!-- Display product details -->
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">Price: $@product.Price</p>
+                </div>
+
+                <!-- Add a button to view details -->
+                <div class="card-footer">
+                    <a href="@Url.Action("Details", "Products", new { id = product.Id })" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
