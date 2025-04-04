@@ -31,13 +31,14 @@
             <div class="form-group">
                 <label asp-for="Image" class="control-label"></label>
                 @* <input asp-for="Image" class="form-control" /> *@
-                <input type="file" name="image" class="form-control" />
+                <input type="file" name="image" class="form-control" 
+                onchange="document.getElementById('ImagePreview').src = window.URL.createObjectURL(this.files[0])" />
                 <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <br />
             <div class="col-sm-10">
                     @* @Html.DisplayFor(model => model.Image) *@
-                <img src="@Url.Content("~/images/products/" + Model.Image)" alt="@Model.Name" width="150" class="img-thumbnail" />
+                <img id="ImagePreview" src="@Url.Content("~/images/products/" + Model.Image)" alt="@Model.Name" width="150" class="img-thumbnail" />
             </div>
             <br />
             <div class="form-group">
@@ -52,5 +53,8 @@
 </div>
 
 @section Scripts {
+    <script>
+
+    </script>
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

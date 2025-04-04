@@ -1,13 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MVCAppDay4Demo.Controllers
 {
-    public class EmployeesController : Controller
+    public class Employees2Controller : Controller
     {
+
+        [TempData]
+        public string MessageAdd { get; set; }
+        [TempData]
+        public string MessageDelete { get; set; }
+
         private readonly AppDbContext _context;
 
-        public EmployeesController(AppDbContext context)
+        public Employees2Controller(AppDbContext context)
         {
             _context = context;
         }
@@ -15,8 +20,7 @@ namespace MVCAppDay4Demo.Controllers
         // GET: Employees
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Employees.Include(e => e.Department);
-            return View(await appDbContext.ToListAsync());
+            return View(await _context.Employees.ToListAsync());
         }
 
         // GET: Employees/Details/5
@@ -27,9 +31,7 @@ namespace MVCAppDay4Demo.Controllers
                 return NotFound();
             }
 
-            var employee = await _context.Employees
-                .Include(e => e.Department)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var employee = await _context.Employees.FirstOrDefaultAsync(m => m.Id == id);
             if (employee == null)
             {
                 return NotFound();
@@ -41,7 +43,6 @@ namespace MVCAppDay4Demo.Controllers
         // GET: Employees/Create
         public IActionResult Create()
         {
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName");
             return View();
         }
 
@@ -50,15 +51,15 @@ namespace MVCAppDay4Demo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Job,Salary,DepartmentId")] Employee employee)
+        public async Task<IActionResult> Create([Bind("Id,Name,Job,Salary")] Employee employee)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(employee);
                 await _context.SaveChangesAsync();
+                MessageAdd = $"Employee {employee.Name} added ... ";
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.DepartmentId);
             return View(employee);
         }
 
@@ -75,7 +76,6 @@ namespace MVCAppDay4Demo.Controllers
             {
                 return NotFound();
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.DepartmentId);
             return View(employee);
         }
 
@@ -84,7 +84,7 @@ namespace MVCAppDay4Demo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Job,Salary,DepartmentId")] Employee employee)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Job,Salary")] Employee employee)
         {
             if (id != employee.Id)
             {
@@ -111,7 +111,6 @@ namespace MVCAppDay4Demo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.DepartmentId);
             return View(employee);
         }
 
@@ -122,15 +121,11 @@ namespace MVCAppDay4Demo.Controllers
             {
                 return NotFound();
             }
-
-            var employee = await _context.Employees
-                .Include(e => e.Department)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var employee = await _context.Employees.FirstOrDefaultAsync(m => m.Id == id);
             if (employee == null)
             {
                 return NotFound();
             }
-
             return View(employee);
         }
 

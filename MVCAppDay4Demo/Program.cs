@@ -7,7 +7,13 @@ namespace MVCAppDay4Demo
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            //builder.Services.AddRazorPages().AddSessionStateTempDataProvider();
+            //builder.Services.AddControllersWithViews().AddSessionStateTempDataProvider();
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSession(config =>
+            {
+                config.IdleTimeout = TimeSpan.FromMinutes(20);
+            });
 
             builder.Services.AddDbContext<AppDbContext>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -24,6 +30,9 @@ namespace MVCAppDay4Demo
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //Using Middleware Session 
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",

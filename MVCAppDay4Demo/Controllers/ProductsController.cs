@@ -29,6 +29,7 @@ namespace MVCAppDay4Demo.Controllers
                     products.Add(item);
                 }
             }
+            ViewData["x"] = "Welcome in MVC ";
             return View(products);
         }
 
@@ -68,18 +69,25 @@ namespace MVCAppDay4Demo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,Price,Description")] Product product, IFormFile image)
+        public async Task<IActionResult> Create([ModelBinder(typeof(ProductBinder))] Product product, IFormFile image)
         {
+            //IO    sayed.jpg
+            string _Extenstion = Path.GetExtension(image.FileName); //jpg
+            string _FileNameWithoutExtension = Path.GetFileNameWithoutExtension(image.FileName);//sayed
+            string _fileName = _FileNameWithoutExtension + DateTime.Now.ToString("yyMMddhhssfff") + _Extenstion;
+
+
             #region Deal with File Or stream
             if (image != null && image.Length > 0)
             {
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", image.FileName);
-
+                //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", image.FileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", _fileName);
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await image.CopyToAsync(stream);
                 }
-                product.Image = image.FileName;
+                //product.Image = image.FileName;
+                product.Image = _fileName;
             }
             #endregion
             if (ModelState.IsValid)

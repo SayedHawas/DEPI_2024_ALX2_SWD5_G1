@@ -10,6 +10,7 @@ namespace MVCAppDay4Demo.Models
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Product> Products { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
